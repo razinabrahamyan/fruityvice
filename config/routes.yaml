@@ -1,3 +1,27 @@
-#index:
-#    path: /
-#    controller: App\Controller\DefaultController::index
+index:
+    path: /
+    controller: App\Controller\FruitsController::index
+api_login_check:
+    path: /api/login_check
+#api_get_me:
+#    path: /api/getMe
+#    controller: App\Controller\RegisterController::getMe
+#    methods: GET|HEAD
+api_fruit_all:
+    path: /fruits
+    controller: App\Controller\FruitsController::index
+    methods: GET|HEAD
+    defaults:
+        route: 'fruity_all'
+api_favorites:
+    path: /favorites
+    controller: App\Controller\FruitsController::allFavorite
+    methods: GET|HEAD
+api_add_favorite:
+    path: /add-favorites/{id}
+    controller: App\Controller\FruitsController::addFavorite
+    methods: GET
+api_remove_favorite:
+    path: /remove-favorites/{id}
+    controller: App\Controller\FruitsController::removeFavorite
+    methods: GET
