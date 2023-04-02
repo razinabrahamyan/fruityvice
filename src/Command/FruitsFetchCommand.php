@@ -78,8 +78,8 @@ class FruitsFetchCommand extends Command
             'Add all fruits in table',
         ]);
         $email = (new Email())
-            ->from('abrahamyan.razin@gmail.com')
-            ->to('xacharm97@gmail.com')
+            ->from('From@mail')
+            ->to('to@mail')
             ->subject('Time for Symfony Mailer!')
             ->text('Sending emails is fun again!')
             ->html('<p>All fruit added </p>');

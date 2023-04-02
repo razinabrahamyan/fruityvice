@@ -11,6 +11,9 @@ composer install
 php bin/console doctrine:migrations:migrate
 ```
 ```
+add from and to mails in FruitsFetchCommand.php
+```
+```
 php bin/console fruits:fetch
 ```
 
