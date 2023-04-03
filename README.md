@@ -18,5 +18,9 @@ php bin/console fruits:fetch
 ```
 
 ```
+php bin/console lexik:jwt:generate-keypair
+```
+
+```
 symfony server:start
 ```
